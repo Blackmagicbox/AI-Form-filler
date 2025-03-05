@@ -1,8 +1,8 @@
 {
         "manifest_version" :3,
-        "name": "AI-Form Filler",
+        "name": "AI Job Application Assistant",
         "version": "0.1",
-        "description": "A AI agent to help out with forms on the web",
+        "description": "A AI agent to help out with Job Application forms on the web",
         "action": {
                 "default_popup": "popup.html"
         }
