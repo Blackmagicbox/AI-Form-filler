@@ -141,3 +141,7 @@ HELP.MD
 
 # Visual Studio Code
 *.code-workspace
+
+# Mac
+.DS_Store
+.AppleDouble
