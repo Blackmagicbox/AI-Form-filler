@@ -40,6 +40,19 @@ Create a `.env` file in the root directory with your settings:
 AI_API_KEY=your_api_key_here
 ```
 
+## Technical Details
+
+### The Problem
+
+🐛 Chrome extension message passing was failing with "message channel closed" error
+🔍 This happens when async responses aren't properly handled between extension components
+
+### The Solution
+
+✅ Implemented proper async message handling in popup.js
+🔄 Added synchronized response pattern in content script
+🛠 Updated manifest.json with correct permissions
+
 ## Contributing
 
 1. Fork the repository
@@ -50,9 +63,9 @@ AI_API_KEY=your_api_key_here
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the GNU Affero General Public License v3.0 - see the LICENSE file for details.
 
 ## Contact
 
 Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
-Project Link: [https://github.com/yourusername/AI-Form-filler](https://github.com/yourusername/AI-Form-filler)
+Project Link: [https://github.com/Blackmagicbox/AI-Form-filler](https://github.com/Blackmagicbox/AI-Form-filler)

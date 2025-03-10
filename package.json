@@ -1,0 +1,21 @@
+{
+  "name": "ai-form-filler",
+  "version": "0.1.0",
+  "description": "An AI Agent to fill forms with specific content",
+  "main": "src/scripts/background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-test-webapp": "cd test-webapp && source env/bin/activate && flask run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Blackmagicbox/AI-Form-filler.git"
+  },
+  "keywords": [
+    "ai",
+    "form-filler",
+    "chrome-extension"
+  ],
+  "author": "",
+  "license": "MIT"
+}
