@@ -1,43 +1,71 @@
-# AI Form Filler
+# AI-Form-filler
 
-An AI Agent to fill forms with specific content. This Chrome extension helps with automating job application form filling.
+An intelligent agent designed to automatically fill forms with context-aware content using AI technology.
 
-## Project Structure
+## Description
 
-- Chrome extension (manifest.json, popup.html, popup.js)
-- Test webapp (Flask-based form for testing)
+AI-Form-filler is a tool that helps automate the process of filling out forms by understanding the context and requirements of each field. It uses artificial intelligence to generate appropriate responses while maintaining consistency and accuracy.
+
+## Features
+
+- Intelligent form field analysis
+- Context-aware content generation
+- Support for various form types
+- Easy integration with existing forms
 
 ## Installation
 
-### Extension Setup
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/AI-Form-filler.git
 
-1. Clone this repository
-2. Open Chrome and navigate to `chrome://extensions/`
-3. Enable "Developer mode"
-4. Click "Load unpacked" and select the project root directory
+# Navigate to project directory
+cd AI-Form-filler
 
-### Test Webapp Setup
-
-1. Navigate to the test-webapp directory
-2. Set up the Python virtual environment:
-   ```
-   cd test-webapp
-   python -m venv env
-   source env/bin/activate
-   pip install flask
-   ```
-3. Run the webapp:
-   ```
-   flask run
-   ```
-4. Visit http://localhost:5000 to test the form
+# Install dependencies
+npm install
+```
 
 ## Usage
 
-1. Navigate to a job application form
-2. Click the extension icon in your browser
-3. Follow the prompts to fill the form automatically
+```javascript
+// Example usage code will go here
+```
 
-## Development
+## Configuration
 
-See CLAUDE.md for development guidelines and coding standards.
+Create a `.env` file in the root directory with your settings:
+
+```env
+AI_API_KEY=your_api_key_here
+```
+
+## Technical Details
+
+### The Problem
+
+🐛 Chrome extension message passing was failing with "message channel closed" error
+🔍 This happens when async responses aren't properly handled between extension components
+
+### The Solution
+
+✅ Implemented proper async message handling in popup.js
+🔄 Added synchronized response pattern in content script
+🛠 Updated manifest.json with correct permissions
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the GNU Affero General Public License v3.0 - see the LICENSE file for details.
+
+## Contact
+
+Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+Project Link: [https://github.com/Blackmagicbox/AI-Form-filler](https://github.com/Blackmagicbox/AI-Form-filler)
