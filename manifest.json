@@ -3,6 +3,19 @@
         "name": "AI Job Application Assistant",
         "version": "0.1",
         "description": "A AI agent to help out with Job Application forms on the web",
+        "permissions": [
+                "activeTab",
+                "storage"
+        ],
+        "background":{
+                "service_worker": "background.js"
+        },
+        "content_scripts": [
+                {
+                        "matches": ["<all_urls>"],
+                        "js": ["content.js"]
+                }
+        ],
         "action": {
                 "default_popup": "popup.html"
         }
